@@ -31,4 +31,4 @@ class Dictionary{
 }
 
 
-export default Dictionary;
+export default Dictionary; 
