@@ -1,6 +1,6 @@
 import Dictionary from "./Dictionary.mjs";
 
-  console.log("Test for å skrive ut");
+console.log("Test for å skrive ut");
 
 const languages = ["./no.json", "./en.json"];
 const dictionary = new Dictionary(...languages);
