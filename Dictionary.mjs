@@ -16,15 +16,16 @@ class Dictionary{
         
         this.currentLanguage = lang;
 
-        this.dictionary = await import(languageFile, { assert: { type: "json" } });
+        this.dictionary = (await import(languageFile, { assert: { type: "json" } }));
     }
 
-    get = function(key){
+     
+    translate(key){
         // Henter riktig verdi basert på key i dictionary.
         return this.dictionary[key];
     }
 
-    keys = function(){
+    get keys (){
         // retunerer alle keys i dictionary 
         return Object.keys( this.dictionary);
     }

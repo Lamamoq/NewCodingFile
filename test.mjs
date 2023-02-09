@@ -1,21 +1,15 @@
-# Usage 
-
-'''Javascript
-// How to import
 import Dictionary from "./Dictionary.mjs";
 
-// Setting languages
+console.log("Test for å skrive ut");
+
 const languages = ["./no.json", "./en.json"];
 const dictionary = new Dictionary(...languages);
 
-// seting a spesific language
 await dictionary.setLanguage("no");
 
-// geting a translation
 const value = dictionary.translate("welcome_massage");
+console.log('test', value);
 
 
-// List of keys in dictionary
 const keys = dictionary.keys;
-
-'''
+console.log(keys);
